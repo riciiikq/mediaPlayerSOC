@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genre   = htmlspecialchars($_POST["genre"]);
     $plan    = htmlspecialchars($_POST["plan"]);
 ?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -38,9 +39,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </main>
 </body>
 </html>
+
 <?php
 } else {
 ?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -100,8 +103,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div id="formMessage"></div>
     </section>
   </main>
-  <script src="script.js"></script>
 </body>
+    <footer>
+        <p>© 2025 M. Stančik, R. Baboľ</p>
+    </footer>
 </html>
 <?php
 }

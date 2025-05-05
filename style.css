@@ -1,4 +1,3 @@
-/* Reset základných štýlov */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@
     color: #eee;
   }
   
-  /* Header a navigácia */
   header {
     background: #444;
     padding: 15px;
@@ -45,14 +43,12 @@
     color: #ffca28;
   }
   
-  /* Hlavný obsah */
   main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 10px;
   }
   
-  /* Sekcia vyhľadávania a zoradenia */
   .search-section {
     display: flex;
     justify-content: space-between;
@@ -67,7 +63,6 @@
     border: none;
   }
   
-  /* Zoznam skladieb */
   .playlist ul {
     list-style: none;
   }
@@ -100,7 +95,6 @@
     color: #ccc;
   }
   
-  /* Detail skladby */
   .song-detail .detail-content {
     display: flex;
     gap: 20px;
@@ -130,7 +124,6 @@
     cursor: pointer;
   }
   
-  /* Formuláre – registrácia */
   .registration-form,
   .login-form {
     background: #333;
@@ -157,7 +150,6 @@
     border: 1px solid #ccc;
   }
   
-  /* Úspešná registrácia */
   .registration-success {
     background: #333;
     padding: 20px;
@@ -172,7 +164,7 @@
     padding: 10px;
     background-color: #333;
     color: #fff;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }

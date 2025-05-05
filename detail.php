@@ -105,7 +105,6 @@ $songData = isset($songs[$song]) ? $songs[$song] : $songs['A'];
       </ul>
     </nav>
   </header>
-
   <main>
     <section class="song-detail">
       <div class="detail-content">
@@ -129,4 +128,7 @@ $songData = isset($songs[$song]) ? $songs[$song] : $songs['A'];
     </section>
   </main>
 </body>
+    <footer>
+        <p>© 2025 M. Stančik, R. Baboľ</p>
+    </footer>
 </html>
