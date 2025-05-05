@@ -3,6 +3,7 @@ $song = isset($_GET['song']) ? $_GET['song'] : 'A';
 
 $songs = [
   'blinding_lights' => [
+    'mp3' => 'audio/blinding_lights.mp3',
     'title' => 'Blinding Lights',
     'artist' => 'The Weeknd',
     'album' => 'After Hours',
@@ -12,6 +13,7 @@ $songs = [
     'description' => 'Retro synth-pop hit, ktorý dominoval rebríčkom v roku 2020.'
   ],
   'teen_spirit' => [
+    'mp3' => 'audio/nirvana_spirit.mp3',
     'title' => 'Smells Like Teen Spirit',
     'artist' => 'Nirvana',
     'album' => 'Nevermind',
@@ -21,6 +23,7 @@ $songs = [
     'description' => 'Grungeová hymna 90. rokov, ikonický hit od Nirvany.'
   ],
   'lose_yourself' => [
+    'mp3' => 'audio/lose_yourself.mp3',
     'title' => 'Lose Yourself',
     'artist' => 'Eminem',
     'album' => '8 Mile',
@@ -30,6 +33,7 @@ $songs = [
     'description' => 'Motivačný rap z filmu 8 Mile, za ktorý Eminem získal Oscara.'
   ],
   'take_five' => [
+    'mp3' => 'audio/take_five.mp3',
     'title' => 'Take Five',
     'artist' => 'Dave Brubeck',
     'album' => 'Time Out',
@@ -39,6 +43,7 @@ $songs = [
     'description' => 'Jedna z najznámejších jazzových skladieb v 5/4 takte.'
   ],
   'strobe' => [
+    'mp3' => 'audio/strobe.mp3',
     'title' => 'Strobe',
     'artist' => 'Deadmau5',
     'album' => 'For Lack of a Better Name',
@@ -48,6 +53,7 @@ $songs = [
     'description' => 'Melancholická elektronická skladba s atmosférickým vývojom.'
   ],
   'the_boxer' => [
+    'mp3' => 'audio/the_boxer.mp3',
     'title' => 'The Boxer',
     'artist' => 'Simon & Garfunkel',
     'album' => 'Bridge Over Troubled Water',
@@ -57,6 +63,7 @@ $songs = [
     'description' => 'Introspektívna folková balada s bohatým zvukovým aranžmánom.'
   ],
   'ordinary_people' => [
+    'mp3' => 'audio/ordinary_people.mp3',
     'title' => 'Ordinary People',
     'artist' => 'John Legend',
     'album' => 'Get Lifted',
@@ -66,6 +73,7 @@ $songs = [
     'description' => 'Klasické R&B piano s emóciami a silným vokálom.'
   ],
   'clair_de_lune' => [
+    'mp3' => 'audio/clair_de_lune.mp3',
     'title' => 'Clair de Lune',
     'artist' => 'Claude Debussy',
     'album' => 'Suite bergamasque',
@@ -85,6 +93,7 @@ $songData = isset($songs[$song]) ? $songs[$song] : $songs['A'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $songData['title']; ?> - Detail skladby</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
   <header>
@@ -96,7 +105,7 @@ $songData = isset($songs[$song]) ? $songs[$song] : $songs['A'];
       </ul>
     </nav>
   </header>
-  
+
   <main>
     <section class="song-detail">
       <div class="detail-content">

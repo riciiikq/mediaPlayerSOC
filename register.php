@@ -30,7 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <p>Email: <?php echo $email; ?></p>
       <p>Obľúbený žáner: <?php echo ucfirst($genre); ?></p>
       <p>Vybraný program: <?php echo ucfirst($plan); ?></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+      <br>
+      <p>Registrácia bolá splnená, ste zaznamenaný v systéme.</p>
+      <br>
+      <a href="index.html"><button>← Späť na zoznam</button></a>
     </section>
   </main>
 </body>
@@ -43,8 +46,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registrácia používateľa</title>
+  <title>Spojdify: Registrácia používateľa</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
   <header>
